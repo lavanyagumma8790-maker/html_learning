@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello js</p>
+    <button id="btn">Click me</button>
+    <script>
+        let para = document.getElementById("demo");
+        let button1 = document.getElementById("btn")
+            button1.addEventListener("click",function(){
+                document.body.removeChild(para);
+
+            });
+        
+    </script>
+    
+</body>
+</html>
