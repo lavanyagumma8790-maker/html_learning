@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+  <p>Press any key on your keyboard:</p>
+  <p id="demo"></p>
+
+  <script>
+    let para = document.getElementById("demo");
+
+    document.addEventListener("keydown", function(event) {
+      para.textContent = "You pressed: " + event.key;
+    });
+  </script>
+</body>
+</html>
