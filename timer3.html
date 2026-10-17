@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>JavaScript setInterval()</h2>
+    <p id="demo">Counter: 0</p>
+
+    <script>
+        let count = 0;
+
+        setInterval(function() {
+            count++;
+
+            document.getElementById("demo").textContent =
+                "Counter: " + count;
+        }, 1000);
+    </script>
+
+</body>
+</html>
