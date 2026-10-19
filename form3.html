@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="demo"></p>
+
+    <script>
+        const form = document.getElementById("myForm");
+        const username = document.getElementById("username");
+        const para = document.getElementById("demo");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (username.value.trim() === "") {
+                para.textContent = "Please enter your name";
+            } else {
+                para.textContent = "Welcome, " + username.value + "!";
+            }
+        });
+    </script>
+
+</body>
+</html>
