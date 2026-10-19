@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username">
+    <button id="btn">Show Name</button>
+
+    <p id="demo"></p>
+
+    <script>
+        const username = document.getElementById("username");
+        const btn = document.getElementById("btn");
+        const para = document.getElementById("demo");
+
+            btn.addEventListener("click", function() {
+                para.textContent = username.value;
+    });
+</script>
+</body>
+</html>
