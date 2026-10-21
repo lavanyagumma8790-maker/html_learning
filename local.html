@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Local Storage Example</h2>
+    <p id="demo"></p>
+
+    <script>
+        localStorage.setItem("username", "Lavanya");
+
+        let name = localStorage.getItem("username");
+
+        document.getElementById("demo").textContent =
+            "Welcome, " + name + "!";
+    </script>
+
+</body>
+</html>
